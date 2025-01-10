@@ -1,56 +1,107 @@
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
   }
   
   #app {
-    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   h1 {
-    color: #333;
+    text-align: center;
+    color: #4CAF50;
   }
   
   .controls {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .controls label {
+    font-weight: bold;
+  }
+  
+  .controls select,
+  .controls button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .info {
+    text-align: center;
+    font-size: 18px;
     margin-bottom: 20px;
   }
   
   #game-board {
     display: grid;
-    gap: 2px;
-    justify-content: center;
+    gap: 1px;
     margin: 20px auto;
   }
   
   .cell {
     width: 30px;
     height: 30px;
+    background-color: #d3d3d3;
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #ccc;
-    border: 1px solid #999;
-    font-size: 18px;
-    font-weight: bold;
+    justify-content: center;
+    border: 1px solid #888;
     cursor: pointer;
   }
   
   .cell.revealed {
     background-color: #e0e0e0;
-    cursor: default;
   }
   
   .cell.flagged {
-    background-color: #fdd;
+    background-color: #ffcc00;
   }
   
   .cell.bomb {
-    background-color: #f44;
-    color: white;
+    background-color: #f44336;
   }
+  
+  #leaderboard {
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  #leaderboard h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #4CAF50;
+  }
+  
+  #leaderboard ol {
+    padding-left: 20px;
+  }
+  
+  #leaderboard li {
+    font-size: 16px;
+  }
+  
