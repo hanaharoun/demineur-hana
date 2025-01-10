@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #app {
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  #game-board {
+    display: grid;
+    gap: 2px;
+    justify-content: center;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    border: 1px solid #999;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cell.revealed {
+    background-color: #e0e0e0;
+    cursor: default;
+  }
+  
+  .cell.flagged {
+    background-color: #fdd;
+  }
+  
+  .cell.bomb {
+    background-color: #f44;
+    color: white;
+  }
